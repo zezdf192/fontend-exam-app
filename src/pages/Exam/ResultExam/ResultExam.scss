@@ -1,0 +1,123 @@
+@media (max-width: 1200px) and (min-width: 1023px) {
+    .result-exam-container {
+        margin: 80px 70px 60px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .result-exam-container {
+        margin: 80px 40px 60px !important;
+        .result-exam-header {
+            width: 80% !important;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .result-exam-container {
+        margin: 80px 20px 60px !important;
+        .result-exam-header {
+            width: 100% !important;
+            .result-infor {
+                .detail-title {
+                    margin-top: 10px;
+                    display: inline-block;
+                    min-width: 200px !important;
+                }
+
+                .detail-description {
+                    margin-left: 20px !important;
+                }
+
+                .col-12 {
+                    padding-left: 0px !important;
+                }
+            }
+        }
+    }
+}
+
+.result-exam-container {
+    margin: 80px 100px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &.private {
+        align-items: center;
+    }
+
+    .result-exam-header {
+       
+        padding: 40px 0;
+        width: 54%;
+        padding: 20px;
+      
+
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+
+        box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2);
+
+        &.private {
+            margin-top: 150px;
+        }
+        .title {
+            text-align: center;
+           
+            margin-bottom: 20px;
+
+            font-size: 2.2rem;
+        }
+
+        .result-infor {
+           
+            width: 80%;
+
+            font-size: 1.8rem;
+            .detail-title {
+                margin-top: 10px;
+                display: inline-block;
+                min-width: 270px;
+            }
+
+            .detail-description {
+                margin-left: 40px;
+            }
+
+            .col-12 {
+                padding-left: 0px !important;
+            }
+        }
+    }
+
+    .question-list {
+        h2 {
+            font-size: 2.2rem;
+            margin-top: 40px;
+        }
+    }
+
+    .result-bottom {
+        margin-top: 40px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 40px;
+
+        .button-btn {
+            padding: 8px 16px;
+            border-radius: 10px;
+            text-decoration: none;
+            border: 1px solid #ccc;
+            font-size: 1.8rem;
+
+            &:hover {
+                border: 1px solid #888;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@media (max-width: 767px) {
+    .sidebar-user-container {
+        display: none !important;
+    }
+}
+
+.sidebar-user-container {
+    width: 30%;
+    background-color: #fff;
+
+    .title {
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 20px 0;
+    }
+
+    .list-action {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        .action-item {
+            border-radius: 10px;
+            list-style-type: none;
+            padding: 14px 12px;
+            color: #41454c;
+            font-size: 1.9rem;
+            font-weight: 500;
+            text-decoration: none;
+
+            background-color: #f6f7f9;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &.active {
+                background-color: #e1f8ff;
+                color: #0281a6;
+            }
+
+            .sub-title {
+                margin-left: 4px;
+            }
+
+            .icon {
+                color: #0281a6;
+            }
+        }
+    }
+}

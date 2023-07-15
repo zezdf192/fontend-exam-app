@@ -1,0 +1,90 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .user-menu-title {
+        .name {
+            font-size: 1.8rem !important;
+        }
+
+        .email {
+            font-size: 1.6rem !important;
+        }
+
+        a {
+            font-size: 1.6rem !important;
+            padding: 12px 0 !important;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .user-menu-title {
+        .name {
+            font-size: 2rem !important;
+        }
+
+        .email {
+            font-size: 1.8rem !important;
+        }
+
+        a {
+            font-size: 1.8rem !important;
+            padding: 14px 0 !important;
+        }
+    }
+}
+
+.user-menu-container {
+    padding: 8px 24px;
+    animation: Tippy-module_fadeIn__2LeID 0.3s ease;
+    .user-menu-header {
+        display: flex;
+
+        .user-menu-title {
+            margin-left: 12px;
+            display: flex;
+            flex-direction: column;
+
+            .name {
+                color: #292929;
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+
+            .email {
+                color: #757575;
+                font-size: 1.4rem;
+                margin-top: 4px;
+            }
+        }
+    }
+
+    .user-menu-body {
+        .user-meu-item {
+            border: none;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+            a {
+                color: #666;
+                cursor: pointer;
+                display: block;
+                font-size: 1.4rem;
+                padding: 10px 0;
+                text-decoration: none;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+@keyframes Tippy-module_fadeIn__2LeID {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

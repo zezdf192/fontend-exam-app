@@ -1,0 +1,187 @@
+/** @format */
+@media (max-width: 1200px) and (min-width: 1023px) {
+    .signup-content {
+        width: 60% !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .signup-container {
+        padding: 20px 100px !important;
+    }
+    .signup-content {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .signup-container {
+
+        padding: 20px 20px !important;
+    }
+    .signup-content {
+        width: 100% !important;
+        
+    }
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    padding: 20px 160px;
+    background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    .language {
+        top: 10px;
+        right: 24px;
+        position: absolute;
+        color: red;
+
+        .flag-language {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .signup-content {
+        padding: 20px 40px;
+        width: 50%;
+        background-color: #fff;
+        border-radius: 10px;
+
+        .title-sign-up {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: #3b71ca;
+            margin-bottom: 40px;
+        }
+
+        input {
+            font-size: 1.8rem;
+
+            padding-left: 16px !important;
+            padding-right: 26px !important;
+        }
+
+        .input-error {
+            border-color: red;
+            box-shadow: none !important;
+        }
+
+        .error {
+            margin-top: 6px;
+            color: red;
+            font-size: 1.4rem;
+        }
+
+        .gender {
+            display: flex;
+            font-size: 1.8rem;
+            align-items: center;
+            justify-content: space-between;
+
+            h5 {
+                font-size: 1.8rem;
+            }
+
+            label {
+                margin-left: 4px;
+            }
+        }
+        .btn {
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 6px 0;
+            outline: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            font-size: 1.7rem;
+            gap: 12px;
+
+            &.sign-in {
+                font-size: 2rem;
+                background-color: #0a73ca;
+                color: #fff;
+            }
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+        .divider:after,
+        .divider:before {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #eee;
+        }
+
+        .divider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .spacer {
+                color: #757575;
+                font-size: 1.8rem;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+        }
+
+        .social {
+            .firebase-google {
+                .firebaseui-container {
+                    max-width: none !important;
+
+                    .firebaseui-card-content {
+                        padding: 0 !important;
+
+                        .firebaseui-idp-button {
+                            max-width: none !important;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 12px 0;
+                            border-radius: 5px;
+
+                            .firebaseui-idp-icon {
+                                height: 20px;
+                                width: 20px;
+                            }
+
+                            .firebaseui-idp-text {
+                                font-size: 1.8rem;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sign-up {
+            font-size: 1.6rem;
+            text-align: center;
+            margin-top: 20px;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}

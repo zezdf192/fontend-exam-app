@@ -1,0 +1,122 @@
+@media (max-width: 1200px) and (min-width: 1023px) {
+    .content-right-admin {
+        display: none !important;
+    }
+    .nav-bar-admin {
+        font-size: 2rem;
+        cursor: pointer;
+        display: block !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navigation-container {
+        .nav-body {
+            .content-right-admin {
+                display: none !important;
+            }
+            .nav-bar-admin {
+                font-size: 2rem;
+                cursor: pointer;
+                display: block !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .navigation-container {
+        .nav-body {
+            .content-right-admin {
+                display: none !important;
+                .navigate {
+                    .language {
+                        gap: 30px !important;
+                    }
+                }
+            }
+            .nav-bar-admin {
+                font-size: 2rem;
+                display: block !important;
+            }
+        }
+    }
+}
+
+.navigation-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    .nav-body {
+        margin: 0 100px;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .content-left-admin {
+            .title-admin {
+                font-size: 2.4rem;
+            }
+        }
+
+        .nav-bar-admin {
+            display: none;
+        }
+
+        .content-right-admin {
+            display: flex;
+
+            .navigate {
+                font-size: 1.8rem;
+                display: flex;
+                gap: 60px;
+
+                .item {
+                    text-decoration: none;
+                    list-style-type: none;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    color: #616161;
+                    font-weight: 500;
+                    padding: 8px 10px;
+
+                    &:hover {
+                        color: #0c7ce9;
+                        cursor: pointer;
+                    }
+
+                    &.active {
+                        color: #0c7ce9;
+                    }
+                }
+
+                .language {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    span {
+                        font-size: 2rem;
+                        &:hover {
+                            color: orange;
+                        }
+
+                        &.active {
+                            color: blue;
+                        }
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

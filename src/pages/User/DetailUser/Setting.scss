@@ -1,0 +1,29 @@
+@media (max-width: 1200px) and (min-width: 1023px) {
+    .detail-user-container {
+        margin: 0 70px !important;
+        margin-top: 80px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .detail-user-container {
+        margin: 0 40px !important;
+        margin-top: 80px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .detail-user-container {
+        margin: 0 20px !important;
+        margin-top: 80px !important;
+        justify-content: center !important;
+    }
+}
+
+.detail-user-container {
+    display: flex;
+    gap: 80px;
+    margin: 0 100px;
+    min-height: 100vh;
+    margin-top: 80px;
+}

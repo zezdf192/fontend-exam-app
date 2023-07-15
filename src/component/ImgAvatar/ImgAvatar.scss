@@ -1,0 +1,36 @@
+
+
+.img-contantner {
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .img-contant {
+        width: 28px;
+        height: 28px;
+       
+        object-fit: cover;
+        border-radius: 50%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .icon-change {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.54);
+        .icon-change-camera {
+            font-size: 3rem;
+            color: #fff;
+            opacity: 0.5;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

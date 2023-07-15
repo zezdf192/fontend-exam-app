@@ -1,0 +1,191 @@
+/** @format */
+@media (max-width: 1200px) and (min-width: 1023px) {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .login-container {
+        padding: 0 40px !important;
+    }
+    .content-left {
+        display: none;
+    }
+    .login-content {
+        margin-top: 80px;
+        justify-content: center;
+    }
+    .content-right {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .login-container {
+        padding: 0 20px !important;
+    }
+    .content-left {
+        display: none;
+    }
+    .login-content {
+        margin-top: 80px;
+        justify-content: center;
+    }
+    .content-right {
+        width: 100% !important;
+    }
+}
+
+.login-container {
+    padding: 0 80px;
+    padding-top: 50px;
+    padding-bottom: 0;
+
+    .language {
+        top: 12px;
+        right: 24px;
+        position: absolute;
+        color: red;
+
+        .flag-language {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .login-content {
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 60px;
+        .content-left {
+            margin-top: 80px;
+            width: 60%;
+            img {
+                width: 80%;
+            }
+        }
+        .content-right {
+            width: 40%;
+
+            .title {
+                text-transform: uppercase;
+                text-align: center;
+                color: #3b71ca;
+                margin-bottom: 32px;
+                font-size: 2.4rem;
+            }
+            input {
+                font-size: 1.9rem;
+                padding-left: 16px !important;
+                padding-right: 26px !important;
+            }
+
+            .input-error {
+                border-color: red;
+                box-shadow: none !important;
+            }
+
+            .error {
+                margin-top: 6px;
+                color: red;
+                font-size: 1.4rem;
+            }
+
+            .forgot-password {
+                font-weight: 600;
+                font-size: 1.8rem;
+                color: #3b71ca;
+                text-align: right;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .btn {
+                width: 100%;
+                border: 1px solid #ccc;
+                padding: 8px 0;
+                outline: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                font-size: 1.7rem;
+                gap: 12px;
+
+                &.sign-in {
+                    font-size: 2rem;
+                    background-color: #0a73ca;
+                    color: #fff;
+                }
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+            .divider:after,
+            .divider:before {
+                content: '';
+                flex: 1;
+                height: 1px;
+                background: #eee;
+            }
+
+            .divider {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .spacer {
+                    color: #757575;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
+            }
+
+            .sign-up {
+                font-size: 1.6rem;
+                text-align: center;
+                margin-top: 20px;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+            .social {
+                .firebase-google {
+                    .firebaseui-container {
+                        max-width: none !important;
+
+                        .firebaseui-card-content {
+                            padding: 0 !important;
+
+                            .firebaseui-idp-button {
+                                max-width: none !important;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 16px 0;
+                                border-radius: 5px;
+
+                                .firebaseui-idp-icon {
+                                    height: 24px;
+                                    width: 24px;
+                                }
+
+                                .firebaseui-idp-text {
+                                    font-size: 2rem;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

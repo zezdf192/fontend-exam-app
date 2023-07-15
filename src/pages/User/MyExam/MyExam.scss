@@ -1,0 +1,125 @@
+@media (max-width: 1500px) and (min-width: 1201px) {
+    .manage-body {
+        margin: 0 60px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content {
+        padding: 0 !important;
+        margin: 20px 70px !important;
+        width: 100% !important;
+
+        .manage-body {
+            margin: 0 !important;
+        }
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 1023px) {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content {
+        padding: 0 !important;
+        margin: 20px 40px !important;
+        width: 100% !important;
+
+        .manage-body {
+            margin: 0 !important;
+
+            .action {
+                gap: 20px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .content {
+        padding: 0 !important;
+        margin: 20px 20px !important;
+        width: 100% !important;
+
+        .manage-body {
+            margin: 0 !important;
+
+            .action {
+                gap: 20px !important;
+            }
+        }
+    }
+    .none-s {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+}
+
+.my-exam-container {
+    display: flex;
+    margin-top: 80px;
+
+    .content {
+        width: 80%;
+        padding: 20px;
+
+        .header-exam {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .add-exam {
+                font-size: 1.9rem;
+                font-weight: 600;
+                color: #616161;
+                text-decoration: none;
+
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 23px;
+
+            .previous,
+            .next {
+                a {
+                    text-decoration: none;
+                    color: #0d6efd;
+                }
+            }
+            .active {
+                /* Kiểu dáng cho trang hiện tại (trang active) */
+                font-weight: bold;
+                color: blue;
+            }
+            /* Kiểu dáng cho các nút và phần tử phân trang */
+        }
+
+        .table-body {
+            min-height: 330px;
+            .action {
+                overflow: visible;
+                display: flex;
+                gap: 30px;
+            }
+        }
+        .hidden-password {
+            -webkit-text-security: disc;
+            -moz-text-security: disc;
+            text-security: disc;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

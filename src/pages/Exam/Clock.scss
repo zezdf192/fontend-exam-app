@@ -1,0 +1,31 @@
+@media (max-width: 1024px) and (min-width: 768px) {
+    .countdown-timer {
+        p {
+            font-size: 3rem !important;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .countdown-timer {
+        height: 100px !important;
+        p {
+            font-size: 2.4rem !important;
+        }
+    }
+}
+
+
+.countdown-timer {
+    display: flex;
+    height: 180px;
+    justify-content: center;
+
+    p {
+        padding: 0 20px;
+        text-align: center;
+
+        margin: auto;
+        font-size: 4rem;
+    }
+}

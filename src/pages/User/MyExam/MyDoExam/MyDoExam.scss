@@ -1,0 +1,127 @@
+.manage-body {
+    margin: 0 90px;
+    .title {
+        text-align: center;
+        margin: 10px 0 40px;
+        font-size: 2.6rem;
+    }
+
+    .filter {
+        text-align: right;
+        margin: 20px 0 12px;
+        padding: 6px;
+        .search {
+            font-size: 1.9rem;
+            font-weight: 600;
+            color: #616161;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .table-container {
+        position: relative;
+        font-size: 1.8rem;
+        .table-head {
+            box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+            table {
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-collapse: collapse;
+                color: gray;
+                table-layout: fixed;
+
+                .table-header {
+                    background-color: #6c7ae0;
+                    color: #fff;
+
+                    th {
+                        text-align: center;
+                        padding: 16px 12px;
+
+                        .icon-sort {
+                            font-size: 1.6rem;
+                            margin-left: 5px;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .table-body {
+            max-height: 400px;
+            overflow: auto;
+            position: relative;
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
+
+            table {
+                width: 100%;
+                position: relative;
+                overflow: visible;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-collapse: collapse;
+                color: gray;
+                table-layout: fixed;
+
+                thead {
+                    width: 100%;
+                }
+
+                tbody {
+                }
+
+                td,
+                th {
+                   
+                    text-align: center;
+
+                    padding: 18px 14px;
+                }
+
+                .action {
+                    overflow: visible;
+                    display: flex;
+                    gap: 50px;
+                    justify-content: center;
+                    .btn-view {
+                        border: none;
+                        outline: none;
+                        font-size: 2rem;
+                        color: green;
+                        background-color: transparent;
+                    }
+
+                    .btn-edit {
+                        border: none;
+                        outline: none;
+                        font-size: 2rem;
+                        color: orange;
+                        background-color: transparent;
+                    }
+
+                    .btn-delete {
+                        border: none;
+                        outline: none;
+                        font-size: 2rem;
+                        color: red;
+                        background-color: transparent;
+                    }
+                }
+
+                tr:nth-child(even) {
+                    background-color: #f8f6ff;
+                }
+            }
+        }
+    }
+}

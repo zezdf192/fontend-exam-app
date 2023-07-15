@@ -1,0 +1,204 @@
+@media (max-width: 1500px) and (min-width: 1200px) {
+    .action {
+        &.exam {
+            gap: 20px !important;
+        }
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 1023px) {
+}
+
+@media (max-width: 1199px) {
+    .admin-manage-container {
+        width: 100%;
+        .content-manage {
+            width: 100% !important;
+            margin: 0 70px !important;
+        }
+        .action {
+            &.exam {
+                gap: 24px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .admin-manage-container {
+        width: 100%;
+        .content-manage {
+            width: 100% !important;
+            margin: 0 20px !important;
+            .table-container {
+                .table-body {
+                    table {
+                        .action {
+                            display: flex;
+                            gap: 20px !important;
+
+                            .btn-view {
+                                font-size: 1.8rem !important;
+                            }
+
+                            .btn-edit {
+                                font-size: 1.8rem !important;
+                            }
+
+                            .btn-delete {
+                                font-size: 1.8rem !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.admin-manage-container {
+    display: flex;
+    margin-top: 80px;
+    .content-manage {
+        width: 80%;
+        margin: 0 90px;
+        .manage-body-admin {
+            .title-manage {
+                text-align: center;
+                margin: 30px 0 40px;
+                font-size: 2.6rem;
+            }
+            .filter {
+                text-align: right;
+                margin: 20px 0 12px;
+                padding: 6px;
+                .search {
+                    font-size: 1.9rem;
+                    font-weight: 600;
+                    color: #616161;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .table-container {
+                position: relative;
+                font-size: 1.8rem;
+
+                .pagination {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    gap: 23px;
+
+                    .previous,
+                    .next {
+                        a {
+                            text-decoration: none;
+                            color: #0d6efd;
+                        }
+                    }
+                    .active {
+                        /* Kiểu dáng cho trang hiện tại (trang active) */
+                        font-weight: bold;
+                        color: blue;
+                    }
+                    /* Kiểu dáng cho các nút và phần tử phân trang */
+                }
+
+                .table-head {
+                    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+                    table {
+                        width: 100%;
+                        position: relative;
+                        overflow: hidden;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        border-collapse: collapse;
+                        color: gray;
+                        table-layout: fixed;
+
+                        .table-header {
+                            background-color: #6c7ae0;
+                            color: #fff;
+
+                            th {
+                                padding: 16px 12px;
+                            }
+                        }
+                    }
+                }
+
+                .table-body {
+                    min-height: 310px;
+                    max-height: 400px;
+                    overflow: auto;
+                    position: relative;
+                    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
+
+                    table {
+                        width: 100%;
+                        position: relative;
+                        overflow: hidden;
+
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        border-collapse: collapse;
+                        color: gray;
+                        table-layout: fixed;
+
+                        thead {
+                            width: 100%;
+                        }
+
+                        tbody {
+                        }
+
+                        td,
+                        th {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            
+                            padding: 16px;
+                        }
+
+                        .action {
+                            display: flex;
+                            gap: 36px;
+
+                            .btn-view {
+                                border: none;
+                                outline: none;
+                                font-size: 2rem;
+                                color: green;
+                                background-color: transparent;
+                            }
+
+                            .btn-edit {
+                                border: none;
+                                outline: none;
+                                font-size: 2rem;
+                                color: orange;
+                                background-color: transparent;
+                            }
+
+                            .btn-delete {
+                                border: none;
+                                outline: none;
+                                font-size: 2rem;
+                                color: red;
+                                background-color: transparent;
+                            }
+                        }
+
+                        tr:nth-child(even) {
+                            background-color: #f8f6ff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

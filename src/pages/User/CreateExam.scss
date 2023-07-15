@@ -1,0 +1,253 @@
+@media (max-width: 1500px) {
+}
+
+@media (max-width: 1200px) and (min-width: 1023px) {
+    .content-top-create {
+        margin: 40px 60px !important;
+    }
+    .question-container {
+        padding: 20px 0 !important;
+        margin: 0 70px !important;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .content-top-create {
+        margin: 40px 40px !important;
+    }
+    .question-container {
+        padding: 20px 0 !important;
+        margin: 0 40px !important;
+    }
+    .body {
+        .content-top-create {
+            margin: 40px 40px !important;
+
+            .left {
+                width: 100% !important;
+            }
+
+            .description {
+                margin-top: 30px;
+                width: 100% !important;
+                textarea {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .password {
+                gap: 70px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .content-top-create {
+        margin: 40px 20px !important;
+    }
+    .question-container {
+        padding: 20px 0 !important;
+        margin: 0 20px !important;
+    }
+    .body {
+        .content-top-create {
+            margin: 40px 20px !important;
+
+            .description {
+                margin-top: 30px;
+                width: 100% !important;
+                textarea {
+                    font-size: 1.8rem;
+                }
+            }
+            .password {
+                gap: 50px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+}
+
+.create-exam-container {
+    margin-top: 120px;
+    .create-exam-content {
+        .header {
+            .title {
+                text-align: center;
+                font-size: 2.6rem;
+                margin-bottom: 30px;
+            }
+        }
+
+        .body {
+            font-size: 1.8rem;
+            .content-top-create {
+                margin: 40px 90px;
+                display: flex;
+                justify-content: space-between;
+                gap: 40px;
+                .content-top-required {
+                    justify-content: space-between;
+                }
+
+                .error-message {
+                    display: block;
+                    color: red;
+                    font-size: 1.6rem;
+                    margin-top: 8px;
+                }
+
+                .img-body {
+                    display: flex;
+                    gap: 30px;
+
+                    margin-top: 30px;
+
+                    .left-ct {
+                        display: flex;
+                        .btn-img {
+                            outline: none;
+                            padding: 4px 13px;
+                            background-color: #00c6d4;
+                            color: #fff;
+                            border-radius: 6px;
+                            max-width: 100px;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+
+                        .img {
+                            border-radius: 3px;
+                            max-width: 270px;
+                            max-height: 270px;
+                            margin-left: 40px;
+                        }
+                    }
+
+                    span {
+                        font-size: 1.8rem;
+                    }
+                }
+
+                .type-exam {
+                    display: flex;
+                
+                    font-size: 1.8rem;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #ccc;
+                    padding-bottom: 30px;
+                  
+
+                    .title-type-exam {
+                        font-size: 2rem;
+                        font-weight: 600;
+                        min-width: 150px;
+                    }
+
+                    .type-item {
+                        margin-top: 20px;
+                      
+                        width: 40%;
+
+                        label {
+                            margin-left: 6px;
+                        }
+
+                        span {
+                            display: block;
+                            margin-top: 8px;
+                        }
+                    }
+                }
+
+                .password {
+                    display: flex;
+                    gap: 135px;
+                    align-items: center;
+                    .title-password {
+                    }
+
+                    .key-password {
+                        color: #00c6d4;
+                    }
+
+                    .btn-password {
+                        border: 1px solid #ccc;
+                        font-size: 1.8rem;
+                        border-radius: 10px;
+                        padding: 6px 12px;
+                        outline: none;
+                        opacity: 0.8;
+
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                .left {
+                   
+                    input {
+                        font-size: 2rem;
+                    }
+                }
+
+                .description {
+                    width: 48%;
+                    textarea {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+
+            .content-bottom {
+                margin-top: 40px;
+                padding: 40px 0;
+                background-color: #eeeeee;
+
+                .question-container {
+                    margin: 0 100px;
+                    padding: 20px;
+
+                    .action {
+                        margin-top: 30px;
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 70px;
+                        align-items: center;
+                        text-align: right;
+
+                        .error-bottom {
+                            color: red;
+                        }
+
+                        .btn-add {
+                            border: none;
+                            outline: none;
+                            background-color: #00c6d4;
+                            color: #fff;
+                            padding: 6px 12px;
+                            margin-right: 20px;
+                            border-radius: 5px;
+                        }
+
+                        .btn-save {
+                            border: none;
+                            outline: none;
+                            background-color: purple;
+                            color: #fff;
+                            padding: 6px 12px;
+
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

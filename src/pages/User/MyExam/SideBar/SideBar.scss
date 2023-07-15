@@ -1,0 +1,42 @@
+@media (max-width: 1200px) and (min-width: 1023px) {
+}
+
+@media (max-width: 1199px) {
+    .sidebar-container {
+        display: none !important;
+    }
+}
+
+.sidebar-container {
+ 
+    min-width: 310px;
+    background-color: #fff;
+
+    .list-action {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-left: 0;
+        .action-item {
+            border-radius: 10px;
+            list-style-type: none;
+            padding: 14px 16px;
+            padding-left: 20px;
+
+            color: #41454c;
+            font-size: 1.9rem;
+            font-weight: 500;
+            text-decoration: none;
+
+            &:hover {
+                background-color: #f6f7f9;
+                cursor: pointer;
+            }
+
+            &.active {
+                background-color: #e1f8ff;
+                color: #0281a6;
+            }
+        }
+    }
+}

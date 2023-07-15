@@ -1,0 +1,60 @@
+@media (max-width: 1024px) {
+    .modal-body {
+        .detail-title {
+            display: inline-block !important;
+            min-width: 200px !important;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .modal-body {
+        .detail-title {
+            display: inline-block !important;
+            min-width: 200px !important;
+        }
+    }
+}
+
+.modal-body {
+    padding: 10px 14px !important;
+    .description-container {
+    }
+
+    .detail-title {
+        font-weight: 600;
+        display: inline-block;
+        min-width: 270px;
+    }
+
+    .detail-description {
+        margin-left: 40px;
+
+        max-width: 100%;
+        word-wrap: break-word;
+        /* hoặc */
+        overflow-wrap: break-word;
+
+        &.hidden-password {
+            -webkit-text-security: disc;
+            -moz-text-security: disc;
+            text-security: disc;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.ratings-go-btn {
+    margin-right: 12px;
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #616161;
+    &:hover {
+        color: #616161;
+        text-decoration: underline;
+    }
+}

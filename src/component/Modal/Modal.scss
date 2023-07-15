@@ -1,0 +1,24 @@
+.modal-container {
+    font-size: 2rem;
+    .modal-content {
+        .modal-header {
+            .modal-title {
+                font-size: 2.4rem;
+            }
+
+            .btn-close {
+                font-size: 1.6rem;
+            }
+        }
+
+        .modal-footer {
+            .btn {
+                font-size: 1.7rem;
+            }
+
+            .btn-secondary {
+                margin-right: 8px;
+            }
+        }
+    }
+}

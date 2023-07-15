@@ -1,0 +1,38 @@
+.modal-edit-container {
+    padding: 10px;
+
+    label {
+        margin-bottom: 6px;
+    }
+    input {
+        font-size: 1.8rem !important;
+        padding-left: 16px !important;
+        padding-right: 26px !important;
+    }
+
+    .input-error {
+        border-color: red;
+        box-shadow: none !important;
+    }
+
+    .error {
+        margin-top: 6px;
+        color: red;
+        font-size: 1.4rem;
+    }
+
+    .gender {
+        display: flex;
+        font-size: 1.8rem;
+        align-items: center;
+        justify-content: space-between;
+
+        h5 {
+            font-size: 1.8rem;
+        }
+
+        label {
+            margin-left: 4px;
+        }
+    }
+}

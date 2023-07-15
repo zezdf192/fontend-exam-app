@@ -1,0 +1,110 @@
+.filter-container {
+    .filter-button {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.group-filter {
+    display: flex;
+    gap: 12px;
+    .ant-form-item {
+        width: 50% !important;
+    }
+}
+
+.icon-close {
+    color: #ccc;
+}
+
+.ant-picker {
+    width: 100%;
+    font-size: 1.8rem !important;
+    padding: 6px 11px 4px !important;
+    .ant-picker-suffix {
+        display: none !important;
+    }
+}
+
+.ant-modal-title {
+    font-size: 2.2rem !important;
+}
+
+.ant-form-item-label {
+    label {
+        font-size: 1.8rem !important;
+    }
+}
+
+.ant-form-item-control-input-content {
+    display: flex !important;
+    gap: 12px;
+}
+
+.ant-input {
+    font-size: 1.7rem !important;
+}
+
+.ant-picker-input {
+    input {
+        font-size: 1.7rem !important;
+    }
+}
+
+.ant-select {
+    max-width: 230px !important;
+}
+
+.ant-select-selection-item {
+    font-size: 1.7rem !important;
+}
+
+.ant-select-selector {
+    padding: 3px 11px !important;
+    height: 39px !important;
+}
+
+.ant-btn {
+    padding: 0px 15px !important;
+    span {
+        font-size: 1.7rem !important;
+    }
+}
+
+.ant-select-selection-item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ant-input-suffix {
+    margin-inline-start: 12px !important;
+}
+
+.date-picker-container {
+    display: flex;
+    width: 100%;
+
+    .custom-datepicker {
+        min-width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 3px 11px;
+        font-size: 1.7rem;
+        outline: #4096ff !important;
+
+        &:hover {
+            border-color: #4096ff !important;
+        }
+    }
+
+    .react-datepicker-wrapper ~ .react-datepicker-wrapper {
+        margin-left: 20px;
+    }
+
+    .react-datepicker__month-container {
+        width: 213px !important;
+        font-size: 1.3rem;
+    }
+}
