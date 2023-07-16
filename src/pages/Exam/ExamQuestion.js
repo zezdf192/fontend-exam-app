@@ -50,7 +50,7 @@ function ExamQuestion({
         <div className="exam-question-container">
             <div className="exam-question-body">
                 <div className="header">
-                    <h2 className="title">
+                    <h2 className="title-exam-question">
                         {t('start-exam.question')} {questionActive + 1}:{' '}
                         <span style={{ marginLeft: '10px' }}> {examInfo && examInfo.title}</span>
                     </h2>

@@ -27,6 +27,7 @@ import ModalDetailUser from '../../Admin/ModalDetailUser/ModalDetailUser'
 import ModalNotify from '../../../component/Modal/ModalNotify'
 import NotFoundData from '../../../component/NotFoundData/NotFoundData'
 import Spiner from '../../../component/Spiner/Spiner'
+import FooterContent from '../../../component/Footer/Footer'
 
 function MyExam() {
     const { t } = useTranslation()
@@ -121,7 +122,6 @@ function MyExam() {
             setListExam(respon.data)
         }
         setLoadingApi(false)
-
     }
 
     let handleDisPlayTypeSort = (type, typeSort) => {
@@ -216,13 +216,11 @@ function MyExam() {
     }
 
     useEffect(() => {
-      
         let slicedData =
             listExam &&
             listExam.length > 0 &&
             listExam.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage)
         setNewListExam(slicedData)
-      
     }, [listExam, currentPage])
 
     return (
@@ -310,7 +308,7 @@ function MyExam() {
                                                                         />
                                                                     </td>
                                                                     <td>{buildEJSTypeExam(item.data.typeExam)}</td>
-                                                                    <td className="action" style={{gap : '30px'}}>
+                                                                    <td className="action" style={{ gap: '30px' }}>
                                                                         <Button
                                                                             descrip={t('tippy.detail-exam')}
                                                                             children={
@@ -382,6 +380,7 @@ function MyExam() {
                     </div>
                 </div>
             </div>
+            <FooterContent />
             <Spiner loading={loadingApi} />
             {isOpenModal && (
                 <ModalNotify

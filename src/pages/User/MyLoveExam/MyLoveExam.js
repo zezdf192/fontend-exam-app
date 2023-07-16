@@ -13,6 +13,7 @@ import { path } from '../../../until/constant'
 import './MyLoveExam.scss'
 import ReactPaginate from 'react-paginate'
 import Spiner from '../../../component/Spiner/Spiner'
+import FooterContent from '../../../component/Footer/Footer'
 
 function MyLoveExam() {
     const { t } = useTranslation()
@@ -102,6 +103,7 @@ function MyLoveExam() {
                     </div>
                 </div>
             </div>
+            <FooterContent />
             <Spiner loading={loadingApi} />
         </>
     )

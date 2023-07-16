@@ -1,11 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import {
-    faMagnifyingGlass,
-    faSpinner,
-    faCircleXmark,
-    faEye,
-} from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass, faSpinner, faCircleXmark, faEye } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Tippy from '@tippyjs/react/headless'
 import { useTranslation } from 'react-i18next'
@@ -26,6 +21,7 @@ import ModalDetailUser from '../../../Admin/ModalDetailUser/ModalDetailUser'
 import FilterRatings from '../../../../component/Filter/FilterRatings/FilterRatings'
 import MyRatings from './MyRatings/MyRatings'
 import Spiner from '../../../../component/Spiner/Spiner'
+import FooterContent from '../../../../component/Footer/Footer'
 
 function RatingsExam() {
     const { examId } = useParams()
@@ -204,7 +200,6 @@ function RatingsExam() {
         if (respon && respon.errCode === 0) {
             let copyData = respon.data
             let copyListMyRatings = []
-          
 
             for (let i = 0; i < copyData.length; i++) {
                 for (let j = 0; j < copyData[i].users.length; j++) {
@@ -420,6 +415,7 @@ function RatingsExam() {
                     </div>
                 </div>
             </div>
+            <FooterContent />
             <Spiner loading={loadingApi} />
             {isOpenModalDetail && (
                 <ModalDetailUser

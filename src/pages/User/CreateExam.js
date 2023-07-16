@@ -477,7 +477,7 @@ function CreateExam() {
                             <div className="content-top-required row">
                                 <div className="form-group left col-lg-6 col-sm-12">
                                     <div className="row">
-                                        <div className="col-12 ">
+                                        <div className="col-lg-12 col-sm-12 ">
                                             <label>{t('crud-exam.title-exam')}</label>
                                             <input
                                                 value={title}
@@ -488,7 +488,7 @@ function CreateExam() {
                                             <span className="error-message">{t(errTitle)}</span>
                                         </div>
 
-                                        <div className="col-4  mt-5">
+                                        <div className="col-lg-4 col-sm-12  mt-5">
                                             <label>{t('crud-exam.maximum-score')}</label>
                                             <Select
                                                 value={selectedScore}
@@ -497,7 +497,7 @@ function CreateExam() {
                                                 isSearchable
                                             />
                                         </div>
-                                        <div className="col-4  mt-5">
+                                        <div className="col-lg-4 col-sm-12  mt-5">
                                             <label>{t('crud-exam.exam-duration')}</label>
                                             <Select
                                                 value={selectedTime}
@@ -506,7 +506,7 @@ function CreateExam() {
                                                 isSearchable
                                             />
                                         </div>
-                                        <div className="col-4  mt-5">
+                                        <div className="col-lg-4 col-sm-12  mt-5">
                                             <label>{t('crud-exam.maximum-test-entries')}</label>
                                             <Select
                                                 value={selectedLimit}

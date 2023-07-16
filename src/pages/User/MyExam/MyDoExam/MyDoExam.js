@@ -9,7 +9,7 @@ import {
     faArrowDownAZ,
     faArrowUp19,
     faArrowUpAZ,
-    faEye,  
+    faEye,
     faPlay,
 } from '@fortawesome/free-solid-svg-icons'
 
@@ -23,6 +23,7 @@ import Filter from '../../../../component/Filter/Filter'
 import { sideBarUser } from '../../../../component/RouteSideBar/routeSideBar'
 import Spiner from '../../../../component/Spiner/Spiner'
 import NotFoundData from '../../../../component/NotFoundData/NotFoundData'
+import FooterContent from '../../../../component/Footer/Footer'
 
 function MyDoExam() {
     const { t } = useTranslation()
@@ -147,7 +148,6 @@ function MyDoExam() {
             setListDoExam(respon.data)
         }
         setLoadingApi(false)
-
     }
 
     let changeDataSearch = (data) => {
@@ -329,6 +329,7 @@ function MyDoExam() {
                     />
                 )}
             </div>
+            <FooterContent />
             <Spiner loading={loadingApi} />
             {/* </LoadingOverlay> */}
         </>

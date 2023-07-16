@@ -7,7 +7,6 @@ import { useSelector } from 'react-redux'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark, faMagnifyingGlass, faSpinner } from '@fortawesome/free-solid-svg-icons'
 
-
 import examService from '../../service/examService'
 import './HomePage.scss'
 import HeaderHome from './HeaderHome/HeaderHome'
@@ -17,7 +16,7 @@ import { useDebounce } from '../../hooks'
 import ModalPrivate from './HeaderHome/ModalPrivate/ModalPrivate'
 import Spiner from '../../component/Spiner/Spiner'
 import NotFoundData from '../../component/NotFoundData/NotFoundData'
-
+import FooterContent from '../../component/Footer/Footer'
 
 function HomePage() {
     const { t } = useTranslation()
@@ -237,23 +236,26 @@ function HomePage() {
                                 </Tippy>
                             </div>
                         </div>
-                        <div className='mobie-code'>
-                        <h2 className="title-homepage-mobie"> {t('home-page.exam-popular')}</h2>
-                        <ModalPrivate
-                            toggleShowModalCode={toggleShowModalCode}
-                            isOpenFilter={showModalCode}
-                            children={<button className="input-code">Code</button>}
-                        />
-                        </div>                    
-                       
+                        <div className="mobie-code">
+                            <h2 className="title-homepage-mobie"> {t('home-page.exam-popular')}</h2>
+                            <ModalPrivate
+                                toggleShowModalCode={toggleShowModalCode}
+                                isOpenFilter={showModalCode}
+                                children={<button className="input-code">Code</button>}
+                            />
+                        </div>
                     </div>
                     {newListExam && newListExam.length > 0 ? (
                         <>
-                            <div className="list-exam">
+                            <div className="list-exam row">
                                 {newListExam.map((item, index) => (
-                                    <div key={index} className="exam-item" onClick={() => handleChooseExam(item)}>
+                                    <div
+                                        key={index}
+                                        className="exam-item col-lg-3 col-sm-5"
+                                        onClick={() => handleChooseExam(item)}
+                                    >
                                         {item.data.image ? (
-                                            <div className="img-container">
+                                            <div className="img-container ">
                                                 <img
                                                     className="img"
                                                     src={item.data.image}
@@ -310,6 +312,7 @@ function HomePage() {
                         </>
                     )}
                 </div>
+                <FooterContent />
             </div>
 
             <Spiner loading={loadingApi} />

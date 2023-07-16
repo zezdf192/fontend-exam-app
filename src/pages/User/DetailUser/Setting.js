@@ -3,6 +3,7 @@ import './Setting.scss'
 import SideBarUser from './SideBarUser/SideBarUser'
 import { sideBarDetailUser } from '../../../component/RouteSideBar/routeSideBar'
 import GroupField from './GroupField/GroupField'
+import FooterContent from '../../../component/Footer/Footer'
 
 function DetailUser() {
     return (
@@ -12,6 +13,7 @@ function DetailUser() {
                 <SideBarUser data={sideBarDetailUser} />
                 <GroupField />
             </div>
+            <FooterContent />
         </>
     )
 }

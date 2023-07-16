@@ -1,10 +1,10 @@
 @media (max-width: 1400px) {
     .ratings-container {
         .search-body {
-            width: 50% !important;       
-                .box {
-                    width: calc((100vw - 440px ) * 0.5 ) !important;
-                }
+            width: 50% !important;
+            .box {
+                width: calc((100vw - 440px) * 0.5) !important;
+            }
         }
     }
 }
@@ -15,7 +15,7 @@
             width: 100% !important;
             margin: 20px 70px !important;
             .box {
-                width: calc((100vw - 140px ) * 0.5 ) !important;
+                width: calc((100vw - 140px) * 0.5) !important;
             }
         }
     }
@@ -27,7 +27,7 @@
             width: 100% !important;
             margin: 20px 40px !important;
             .box {
-                width: calc((100vw - 80px ) * 0.5 ) !important;
+                width: calc((100vw - 80px) * 0.5) !important;
             }
         }
     }
@@ -39,7 +39,7 @@
             .search-container-rating {
                 flex-direction: column;
                 gap: 30px;
-                .search-body{
+                .search-body {
                     width: 100% !important;
                 }
             }
@@ -49,7 +49,7 @@
             margin: 20px 20px !important;
 
             .box {
-                width: calc((100vw - 50px )) !important;
+                width: calc((100vw - 50px)) !important;
             }
 
             .my-ratings {
@@ -67,6 +67,7 @@
 
 .ratings-container {
     display: flex;
+    min-height: 600px;
 
     margin-top: 80px;
     .ratings-body {
@@ -101,7 +102,7 @@
                     position: relative;
 
                     .box {
-                        width: calc((100vw * 0.7) * 0.6 );
+                        width: calc((100vw * 0.7) * 0.6);
                     }
 
                     .search {
@@ -306,8 +307,6 @@
                         }
                         td,
                         th {
-                          
-
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;
