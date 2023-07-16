@@ -351,5 +351,10 @@
         "time-up": "Time's up",
         "score": "score",
         "no-attempts": "No more participation attempts available"
+    },
+    "footer": {
+        "about": "If you want to learn more about the Exam App, please follow along",
+        "contact": "Contact",
+        "reserved": "All rights reserved Exam App"
     }
 }

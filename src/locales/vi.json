@@ -353,5 +353,10 @@
         "time-up": "Hết thời gian",
         "score": "điểm",
         "no-attempts": "Hết lượt tham gia"
+    },
+    "footer": {
+        "about": "Nếu bạn muốn biết nhiều hơn về Exam App, hãy theo dõi qua",
+        "contact": "Liên hệ",
+        "reserved": "Bản quyền thuộc Exam App"
     }
 }
